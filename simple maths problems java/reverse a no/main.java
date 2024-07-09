@@ -8,12 +8,13 @@ public class main {
 
         int ReverseNo = ReverseNo( N );
         System.out.println(ReverseNo);
+
     }
 
 
     static int ReverseNo( int N ){
         int revNo = 0;
-        boolean isNegative = N<0;
+        boolean isNegative = N < 0 ? true : false;
         int absN = Math.abs(N);
         
         while( absN > 0){
