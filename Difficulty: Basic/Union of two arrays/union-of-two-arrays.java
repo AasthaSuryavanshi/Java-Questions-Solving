@@ -43,22 +43,14 @@ class Main {
 
 class Solution {
     public static int doUnion(int arr1[], int arr2[]) {
-        // Your code here, hashset only stores unique values
-        HashSet<Integer> unionset =  new HashSet<>();
-        
-        for(int num : arr1){
-            unionset.add(num);
+        // Your code here
+        HashSet<Integer> set = new HashSet<>();
+        for(int i=0; i<arr1.length; i++){
+            set.add(arr1[i]);
         }
-        
-        for(int num : arr2){
-            unionset.add(num);
+        for(int i=0; i<arr2.length; i++){
+            set.add(arr2[i]);
         }
-        
-        return unionset.size();
-        
-        
-        
-        
-        
+        return set.size();
     }
 }
